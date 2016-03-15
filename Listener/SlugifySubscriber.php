@@ -2,7 +2,7 @@
 
 namespace Igdr\Bundle\SlugifyBundle\EventListener;
 
-use App\Bundle\SlugifyBundle\Slugify\SlugifyInterface;
+use Igdr\Bundle\SlugifyBundle\Slugify\SlugifyInterface;
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;

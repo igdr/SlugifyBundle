@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Bundle\SlugifyBundle\Slugify;
+namespace Igdr\Bundle\SlugifyBundle\Slugify;
 
 /**
  * Interface SlugifyInterface.
