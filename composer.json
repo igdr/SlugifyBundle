@@ -1,0 +1,19 @@
+{
+    "name": "igdr/slugify-bundle",
+    "type": "symfony-bundle",
+    "description": "Slugify Bundle",
+    "keywords": [
+        "Igdr",
+        "Slugify"
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": ">=2.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Igdr\\Bundle\\SlugifyBundle": ""
+        }
+    },
+    "target-dir": "Igdr/Bundle/SlugifyBundle"
+}

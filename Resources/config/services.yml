@@ -1,0 +1,10 @@
+services:
+    igdr_slugify.slugify:
+        class: Igdr\Bundle\SlugifyBundle\Service\SlugifyService
+
+    igdr_slugify.subscriber:
+        class: Igdr\Bundle\SlugifyBundle\EventListener\SlugifySubscriber
+        calls:
+            - [setSlugify, ["@igdr_slugify.slugify"]]
+        tags:
+            - { name: doctrine.event_subscriber }
