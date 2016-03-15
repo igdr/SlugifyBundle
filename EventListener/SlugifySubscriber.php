@@ -2,7 +2,7 @@
 
 namespace Igdr\Bundle\SlugifyBundle\EventListener;
 
-use Igdr\Bundle\SlugifyBundle\Slugify\SlugifyInterface;
+use Igdr\Bundle\SlugifyBundle\Model\SlugifyInterface;
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Events;
@@ -51,7 +51,6 @@ class SlugifySubscriber implements EventSubscriber
     public function generateSlug(LifecycleEventArgs $args)
     {
         $entity = $args->getEntity();
-
         if ($entity instanceof SlugifyInterface) {
             $slug = $entity->getSlug();
             if (empty($slug)) {
