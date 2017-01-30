@@ -12,15 +12,15 @@ interface SlugifyInterface
      *
      * @return $this
      */
-    public function setSlug($slug);
+    public function setSlug(string $slug = null);
 
     /**
      * @return string
      */
-    public function getSlug();
+    public function getSlug(): ?string;
 
     /**
      * @return string
      */
-    public function getSlugify();
+    public function getSlugify(): string;
 }
